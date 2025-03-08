@@ -6,7 +6,6 @@
             <a href="{{route('categories.catProduct', $category)}}"><img
                     src="{{ asset('storage/' . $category->img_path  )}}"></a>
         </div>
-        <h3><a href="{{route('categories.catProduct', $category)}}">{{ $category->name }}</a></h3>
         <div class="m-4" >
             <p style="height: 102px !important">{{Str::limit($category->description, 130, '...')}}
                 <a href="{{route('categories.show', $category)}}">Read More</a></p> 
